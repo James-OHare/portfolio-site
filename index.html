@@ -1,28 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="assets/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="James O'Hare — Software Engineer based in Dublin, Ireland. Building thoughtful systems at the intersection of performance and simplicity.">
+  <title>James O'Hare — Software Engineer</title>
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-    <header>
-        <h1>James O'Hare</h1>
-        <nav>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">James <span>O'Hare</span></a>
+      <ul class="nav-links">
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="projects.html">Projects</a>
+    <a href="experience.html">Experience</a>
+    <a href="education.html">Education</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <section class="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-ghost">O'Hare</div>
+    <div class="hero-inner">
+      <div class="available-badge">
+        <div class="available-dot"></div>
+        Open to new roles
+      </div>
+      <div class="hero-label">Software Engineer</div>
+      <h1 class="hero-name">James<br><em>O'Hare</em></h1>
+      <p class="hero-desc">
+        Building thoughtful systems at the intersection of performance and simplicity.
+        Based in Dublin, Ireland — working across backend infrastructure, distributed systems, and developer tooling.
+      </p>
+      <div class="hero-actions">
+        <a href="projects.html" class="btn btn-primary">View Projects</a>
+        <a href="https://github.com/james-ohare" target="_blank" rel="noopener" class="btn btn-outline">GitHub &#8599;</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      Scroll
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section>
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text fade-up">
+          <div class="section-header">
+            <div class="section-label">About</div>
+            <h2 class="section-title">Engineer by trade,<br><em>builder</em> by instinct.</h2>
+          </div>
+          <p>
+            I'm a software engineer with over six years of experience designing and shipping production systems.
+            My work spans API architecture, real-time data infrastructure, and open-source tooling — with a focus
+            on writing code that is readable, maintainable, and fast.
+          </p>
+          <p>
+            I care deeply about the craft of engineering: not just making things work, but making them
+            <strong>work well</strong>. I've contributed to systems handling millions of requests per day at companies
+            including Stripe and Intercom, and I continue to build and maintain several open-source projects.
+          </p>
+          <p>
+            When I'm not writing code, I'm probably reading about programming language theory, running along the
+            Liffey, or overcomplicating a perfectly good home espresso setup.
+          </p>
+          <br>
+          <a href="experience.html" class="btn btn-outline">View Experience</a>
+        </div>
+        <div class="about-stats fade-up stagger-1">
+          <div class="stat-card">
+            <div class="stat-number">6+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">12</div>
+            <div class="stat-label">Open Source Projects</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Companies</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">TCD</div>
+            <div class="stat-label">BSc Computer Science</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section>
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-label">Selected Work</div>
+        <h2 class="section-title">Featured <em>Projects</em></h2>
+        <p class="section-sub">A selection of things I have designed, built, and shipped — most of it open source.</p>
+      </div>
+      <div class="project-grid" id="featured-grid"></div>
+      <br><br>
+      <a href="projects.html" class="btn btn-outline fade-up">All Projects &#8594;</a>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-logo">James <em>O'Hare</em></div>
+          <div class="footer-tagline">Software Engineer — Dublin, Ireland</div>
+        </div>
+        <nav class="footer-nav">
+          <div class="footer-nav-col">
+            <h4>Pages</h4>
             <ul>
-                <li><a href="projects.html">Projects</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="experience.html">Experience</a></li>
+              <li><a href="education.html">Education</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
+          </div>
+          <div class="footer-nav-col">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="https://github.com/james-ohare" target="_blank" rel="noopener">GitHub</a></li>
+              <li><span style="color: var(--text-3);">LinkedIn</span></li>
+              <li><a href="mailto:jamesoharephysics@gmail.com">Email</a></li>
+            </ul>
+          </div>
         </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Welcome to My Portfolio</h2>
-            <p>This is a brief introduction about myself.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 James O'Hare. All rights reserved.</p>
-    </footer>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2024 James O'Hare. Built with HTML, CSS &amp; Vanilla JS.</p>
+        <div class="footer-social">
+          <a href="https://github.com/james-ohare" target="_blank" rel="noopener">GitHub</a>
+          <span style="color: var(--text-3);">LinkedIn</span>
+          <a href="mailto:jamesoharephysics@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
 </body>
 </html>

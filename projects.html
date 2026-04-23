@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects by James O'Hare — open-source tools, systems software, and developer infrastructure.">
+  <title>Projects — James O'Hare</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">James <span>O'Hare</span></a>
+      <ul class="nav-links">
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="projects.html">Projects</a>
+    <a href="experience.html">Experience</a>
+    <a href="education.html">Education</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="page-top">
+    <div class="page-banner">
+      <div class="container">
+        <div class="page-banner-inner">
+          <div class="page-banner-label">Work</div>
+          <h1 class="page-banner-title">All <em>Projects</em></h1>
+          <p class="page-banner-sub">
+            Open-source tools, systems software, and developer infrastructure — built in the gaps between everything else.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <section>
+      <div class="container">
+        <div class="filter-bar fade-up">
+          <span class="filter-label">Filter:</span>
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="systems">Systems</button>
+          <button class="filter-btn" data-filter="tools">Tools</button>
+          <button class="filter-btn" data-filter="libraries">Libraries</button>
+        </div>
+        <div class="project-grid" id="all-projects-grid"></div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div>
+            <div class="footer-logo">James <em>O'Hare</em></div>
+            <div class="footer-tagline">Software Engineer — Dublin, Ireland</div>
+          </div>
+          <nav class="footer-nav">
+            <div class="footer-nav-col">
+              <h4>Pages</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav-col">
+              <h4>Connect</h4>
+              <ul>
+                <li><a href="https://github.com/james-ohare" target="_blank" rel="noopener">GitHub</a></li>
+                <li><span style="color: var(--text-3);">LinkedIn</span></li>
+                <li><a href="mailto:jamesoharephysics@gmail.com">Email</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copy">&copy; 2024 James O'Hare. Built with HTML, CSS &amp; Vanilla JS.</p>
+          <div class="footer-social">
+            <a href="https://github.com/james-ohare" target="_blank" rel="noopener">GitHub</a>
+            <span style="color: var(--text-3);">LinkedIn</span>
+            <a href="mailto:jamesoharephysics@gmail.com">Email</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
